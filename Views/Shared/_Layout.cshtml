@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Infotec</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <a href="#">
+                Criar conta
+                <div class="barra"></div>
+            </a>
+            <a href="#">
+                Login
+                <div class="barra"></div>
+            </a>
+        </div>
+        <div class="texto">
+            <h2>Venda de eletrônicos</h2>
+            <p>Texto generico de venda.Texto generico de venda.Texto generico de venda.Texto generico de venda.</p>
+        </div>
+    </header>
+    @RenderBody()
+
+<footer>
+    <h3>Contato</h3>
+    <div class="redes">
+        <div class="rede whatsapp"></div>
+        <div class="rede facebook"></div>
+        <div class="rede linkedin"></div>
+    </div>
+    <div class="contato">
+        <div class="cont local">
+            <p>Avenida Beira-mar, 7.001, Centro - Florianópolis - SC</p>
+        </div>
+        <div class="cont telefone">
+            <p>De segunda a sexta (Horário das 09:00 as 19:00): +55 48 99999-9999</p>
+        </div>
+        <div class="cont instagram">
+            <p>infotec</p>
+        </div>
+        <div class="cont email">
+            <p>contato@infotec.com</p>
+        </div>
+    </div>
+</footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
