@@ -1,0 +1,9 @@
+Database: Infotec
+
+Tabela: Pessoa
+
+Campos:
+Id int
+Nome varchar(50)
+Email varchar(50)
+Senha varchar(50)

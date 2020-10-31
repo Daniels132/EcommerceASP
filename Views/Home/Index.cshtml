@@ -1,7 +1,22 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
-
+    <header>
+        <div class="nav">
+            <a asp-area="" asp-controller="Pessoa" asp-action="Index" >
+                Criar conta
+                <div class="barra"></div>
+            </a>
+            <a href="#">
+                Login
+                <div class="barra"></div>
+            </a>
+        </div>
+        <div class="texto">
+            <h2>Venda de eletrônicos</h2>
+            <p>Texto generico de venda.Texto generico de venda.Texto generico de venda.Texto generico de venda.</p>
+        </div>
+    </header>
 <section class="sobre">
     <div class="texto">
         <h3>compre mais barato aqui</h3>
@@ -63,3 +78,25 @@
     </div>
     <iframe src="https://maps.google.com/maps?q=university%20of%20san%20francisco&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
 </section>
+<footer>
+    <h3>Contato</h3>
+    <div class="redes">
+        <div class="rede whatsapp"></div>
+        <div class="rede facebook"></div>
+        <div class="rede linkedin"></div>
+    </div>
+    <div class="contato">
+        <div class="cont local">
+            <p>Avenida Beira-mar, 7.001, Centro - Florianópolis - SC</p>
+        </div>
+        <div class="cont telefone">
+            <p>De segunda a sexta (Horário das 09:00 as 19:00): +55 48 99999-9999</p>
+        </div>
+        <div class="cont instagram">
+            <p>infotec</p>
+        </div>
+        <div class="cont email">
+            <p>contato@infotec.com</p>
+        </div>
+    </div>
+</footer>

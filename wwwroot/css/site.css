@@ -7,7 +7,6 @@
 
 html, body {
     height: 100%;
-    background-color: #001219;
 }
 
 button {
@@ -276,6 +275,7 @@ footer {
     text-align: center;
     color: white;
     padding-top: 5%;
+    background-color: #001219;
 }
 
     footer .redes {
