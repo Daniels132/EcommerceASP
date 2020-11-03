@@ -5,13 +5,11 @@
     font-family: 'Open Sans', sans-serif;
 }
 
-html, body {
-    height: 100%;
-}
-
 button {
     outline: none;
 }
+
+/*main*/
 
 header {
     width: 100%;
@@ -159,7 +157,7 @@ main {
         main .container .produto {
             display: inline-block;
             width: 200px;
-            border: 1px solid rgba(0,0,0,0.6);
+            border: 1px solid rgba(0, 0, 0, 0.6);
             margin-right: 20px;
             margin-bottom: 20px;
             border-radius: 4px;
@@ -233,6 +231,10 @@ main {
             cursor: pointer;
             transition: 400ms;
         }
+        main .cad button a {
+            color: white;
+            text-decoration: none;
+        }
 
             main .cad button:hover {
                 background-color: rgb(58, 110, 6);
@@ -282,7 +284,7 @@ footer {
         margin: 20px auto;
         width: 200px;
         padding: 10px;
-        border-bottom: 1px solid rgba(255,255,255,0.3);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
         display: flex;
         justify-content: space-between;
     }
@@ -329,11 +331,11 @@ footer {
             background-size: 25px 25px;
             background-position: center top;
             background-repeat: no-repeat;
-            cursor:pointer;
+            cursor: pointer;
         }
 
             footer .contato .cont p {
-                color: rgba(255,255,255,0.8);
+                color: rgba(255, 255, 255, 0.8);
             }
 
             footer .contato .cont.telefone {
@@ -421,4 +423,304 @@ footer {
                 margin-left: 40%;
                 list-style-position: outside;
             }
+}
+
+/*cadastro*/
+
+.form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    align-items: center;
+}
+
+    .form h1 {
+        font-size: 1.5em;
+        color: rgba(149, 214, 88, 0.8);
+    }
+
+    .form .elements {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 5%;
+    }
+
+        .form .elements form {
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+            .form .elements form input {
+                margin-top: 15px;
+                height: 40px;
+                padding-left: 10px;
+                font-size: 15px;
+                outline: none;
+                border: 1px solid rgba(0, 0, 0, 0.4);
+                border-radius: 4px;
+            }
+
+            .form .elements form .button {
+                margin-top: 15px;
+            }
+
+                .form .elements form .button button {
+                    height: 50px;
+                    width: 150px;
+                    color: white;
+                    font-size: 15px;
+                    background-color: rgb(118, 182, 23);
+                    border: 0;
+                    border-radius: 4px;
+                    cursor: pointer;
+                    transition: 400ms;
+                }
+
+                    .form .elements form .button button:hover {
+                        background-color: rgb(66, 105, 8);
+                    }
+
+        .form .elements .img {
+            width: 450px;
+            height: 400px;
+            background-image: url("../imagens/cad.png");
+            background-size: 100% 100%;
+            border: 5px solid #ccc;
+        }
+
+@media(max-width:882px) {
+    .form .elements {
+        flex-direction: column;
+    }
+
+        .form .elements form {
+            width: 100%;
+            border: 1px solid #ccc;
+            padding: 5%;
+            border-radius: 4px;
+            margin-bottom: 15px;
+        }
+
+        .form .elements .img {
+            display: none;
+        }
+}
+
+/*login*/
+
+.box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5%;
+}
+
+    .box .accounts {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 2px solid #ccc;
+    }
+
+        .box .accounts h2 {
+            font-size: 1.2em;
+            margin-bottom: 35px;
+        }
+
+        .box .accounts button {
+            width: 400px;
+            height: 40px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+            border: 0;
+            font-size: 17px;
+            color: white;
+            background-color: rgb(60, 134, 231);
+            cursor: pointer;
+            transition: 400ms;
+        }
+
+            .box .accounts button:hover {
+                background-color: rgb(33, 96, 179);
+            }
+
+            .box .accounts button:nth-child(3) {
+                background-color: rgb(91, 204, 238);
+            }
+
+                .box .accounts button:nth-child(3):hover {
+                    background-color: rgb(61, 156, 185);
+                }
+
+    .box .form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+        .box .form .input {
+            border: 1px solid rgba(0, 0, 0, 0.4);
+            border-radius: 8px;
+            width: 350px;
+            height: 45px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 15px;
+            overflow: hidden;
+        }
+
+            .box .form .input .img {
+                width: 10%;
+                height: 100%;
+                background-image: url("../imagens/emailCad.svg");
+                background-size: 15px 15px;
+                background-position: center center;
+                background-repeat: no-repeat;
+            }
+
+            .box .form .input:nth-child(2) .img {
+                background-image: url("../imagens/padlock.svg");
+            }
+
+            .box .form .input input {
+                border: 0;
+                width: 90%;
+                height: 100%;
+                outline: none;
+                border-left: 2px solid #ccc;
+                padding-left: 5px;
+                font-size: 15px;
+            }
+
+        .box .form .enviar {
+            width: 350px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+            .box .form .enviar button {
+                width: 150px;
+                height: 35px;
+                background-color: rgb(15, 187, 24);
+                color: white;
+                font-size: 17px;
+                font-weight: 600;
+                border: 0;
+                border-radius: 4px;
+                cursor: pointer;
+                transition: 400ms;
+            }
+
+                .box .form .enviar button:hover {
+                    background-color: rgb(9, 122, 15);
+                }
+
+    .box .forgot {
+        width: 350px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+        .box .forgot .texto {
+            display: flex;
+            flex-direction: column;
+        }
+
+            .box .forgot .texto small {
+                color: rgb(175, 175, 175);
+            }
+
+            .box .forgot .texto a {
+                position: relative;
+                text-decoration: none;
+                font-size: 12px;
+                color: rgb(5, 168, 197);
+                margin-top: 5px;
+            }
+
+                .box .forgot .texto a div {
+                    position: absolute;
+                    top: 100%;
+                    left: 25%;
+                    width: 0;
+                    transition: 400ms;
+                }
+
+                .box .forgot .texto a:hover div {
+                    left: 0;
+                    width: 45%;
+                    border: 1px solid #ccc;
+                }
+
+        .box .forgot button {
+            width: 100px;
+            height: 45px;
+            background-color: rgb(224, 156, 30);
+            border: 0;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: 400ms;
+        }
+
+            .box .forgot button:hover {
+                background-color: rgb(197, 134, 16);
+            }
+
+            .box .forgot button a {
+                text-decoration: none;
+                color: white;
+                font-size: 1em;
+                font-weight: 600;
+            }
+
+@media(max-width:410px) {
+    .box .accounts {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 2px solid #ccc;
+    }
+
+        .box .accounts button {
+            width: 80%;
+            font-size: 1em;
+        }
+
+    .box .form .input {
+        width: 100%;
+    }
+
+    .box .form .enviar {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+        .box .form .enviar button {
+            margin-top: 10px;
+        }
+
+    .box .forgot {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 5px;
+    }
 }

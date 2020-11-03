@@ -114,3 +114,4 @@ C:\Users\Rafael\Projeto\P-Infotec\Infotec\bin\Debug\netcoreapp3.1\runtimes\win-x
 C:\Users\Rafael\Projeto\P-Infotec\Infotec\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\Rafael\Projeto\P-Infotec\Infotec\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\Rafael\Projeto\P-Infotec\Infotec\obj\Debug\netcoreapp3.1\Razor\Views\Pessoa\Create.cshtml.g.cs
+C:\Users\Rafael\Projeto\P-Infotec\Infotec\obj\Debug\netcoreapp3.1\Razor\Views\Login\Index.cshtml.g.cs

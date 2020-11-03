@@ -1,0 +1,38 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+    <div class="box">
+        <div class="accounts">
+            <h2>Login</h2>
+            <button>Login com Facebook</button>
+            <button>Login com Twitter</button>
+        </div>
+        <div class="form">
+            <div class="input">
+                <div class="img"></div>
+                <input type="text" placeholder="Email">
+            </div>
+            <div class="input">
+                <div class="img"></div>
+                <input type="password" placeholder="Senha">
+            </div>
+            <div class="enviar">
+                <div>
+                    <input type="checkbox" id="remember">
+                    <label for="remember"><small>Lembrar de mim</small></label>
+                </div>
+                <button>Log In</button>
+            </div>
+        </div>
+        <div class="forgot">
+            <div class="texto">
+                <small>Esqueceu sua senha?</small>
+                <a href="#">Clique aqui <div></div></a>
+            </div>
+            <button>
+                <a asp-area="" asp-controller="Pessoa" asp-action="Index">Cadastre-se</a>
+            </button>
+        </div>
+    </div>
+

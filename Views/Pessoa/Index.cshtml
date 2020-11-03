@@ -3,7 +3,18 @@
     ViewData["Title"] = "Index";
 }
 
-<h2>Cadastro</h2>
-<a href="@Url.Action("Create", "Pessoa")">Cadastrar</a><br />
-<a asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-
+    <div class="form">
+        <div class="elements">
+            <form action="">
+                <h1>Cadastre-se agora e obtenha desconto na inauguração da loja!</h1>
+                <input type="text" placeholder="Nome">
+                <input type="password" placeholder="Senha">
+                <input type="password" placeholder="Confirme a senha">
+                <input type="email" placeholder="Email">
+                <div class="button">
+                    <button>Cadastrar</button>
+                </div>
+            </form>
+            <div class="img"></div>
+        </div>
+    </div>
